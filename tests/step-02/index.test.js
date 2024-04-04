@@ -1,5 +1,4 @@
 const readCSV = require('../../src/csvReader');
-
 test('Read CSV File', async () => {
     const data = await readCSV('./sample.csv');
     expect(data.length).toBeGreaterThan(0);
